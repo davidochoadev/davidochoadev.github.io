@@ -1,4 +1,6 @@
 ### Hi there 👋
+- 🔭 I’m currently working with Remix.run an React.js framework
+- 🌱 I’m currently learning Python
 
 <!--
 **davideochoaa/davideochoaa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
