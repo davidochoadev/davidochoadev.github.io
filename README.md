@@ -1,6 +1,6 @@
 ### Hi there 👋
 - 🔭 I’m currently working with Remix.run an React.js framework
-- 🌱 I’m currently learning Python
+- 🌱 I’m currently learning Svelte and SvelteKit
 
 <!--
 **davideochoaa/davideochoaa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
