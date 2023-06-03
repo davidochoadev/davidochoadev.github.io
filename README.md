@@ -20,12 +20,13 @@
 ## My Coding Stats
 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;">
 <img alt="David Stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=davidochoadev&amp;layout=compact&amp;hide_border=true&amp;title_color=33DDB3&bg_color=1E293B&text_color=ffffff">
-<br>
+
 <img class="md:w-1/2 h-1/4 md:h-min" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=davidochoadev&amp;hide_border=true&amp;title_color=33DDB3&amp;icon_color=33DDB3&amp;hide=contribs,prs&amp;show_icons=true&amp;include-all-commits=true&bg_color=1E293B&text_color=ffffff">
-<br>
+
 <img class="md:w-1/2 h-1/4 md:h-min" alt="Wakatime Stats" src="https://github-readme-stats.vercel.app/api/wakatime?username=davidochoadev&amp;title_color=33DDB3&amp;hide_border=true&amp;custom_title=Spent-on-Coding&layout=compact&bg_color=1E293B&text_color=ffffff">
-<br>
+
 <img alt="David Stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=davidochoadev&amp;langs_count=5&amp;hide_border=true&amp;title_color=33DDB3&amp;hide_title=true&bg_color=1E293B&text_color=ffffff">
+</div>
 
 <!--
 **davideochoaa/davideochoaa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
