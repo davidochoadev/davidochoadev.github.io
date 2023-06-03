@@ -20,7 +20,7 @@
 ### My Coding Stats
 <img alt="David Stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=davidochoadev&amp;layout=compact&amp;hide_border=true&amp;title_color=33DDB3">
 <br>
-<img class="md:w-1/2 h-1/4 md:h-min" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=davidochoadev&amp;hide_border=true&amp;title_color=33DDB3&amp;icon_color=33DDB3&amp;hide=contribs,prs&amp;show_icons=true&amp;theme=default#gh-light-mode-only&amp;include-all-commits=true">
+<img class="md:w-1/2 h-1/4 md:h-min" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=davidochoadev&amp;hide_border=true&amp;title_color=33DDB3&amp;icon_color=33DDB3&amp;hide=contribs,prs&amp;show_icons=true&amp;theme=default#gh-dark-mode-only&amp;include-all-commits=true">
 <br>
 <img class="md:w-1/2 h-1/4 md:h-min" alt="Wakatime Stats" src="https://github-readme-stats.vercel.app/api/wakatime?username=davidochoadev&amp;title_color=33DDB3&amp;hide_border=true&amp;custom_title=Spent-on-Coding">
 <br>
