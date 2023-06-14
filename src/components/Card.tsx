@@ -43,7 +43,7 @@ export function UserCard() {
 	);
 }
 
-export function AboutCard() {
+export function MemojiCard() {
    const ref = useRef<HTMLDivElement>(null); // Specify the type of the ref
    const ref2 = useRef<HTMLImageElement>(null);
 
@@ -67,13 +67,13 @@ export function AboutCard() {
             <div className="w-[720px] h-[720px] rounded-full bg-[#103951] absolute -bottom-[720px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10"></div>
          </div>
 			<div ref={ref2} className="w-full h-full absolute z-[60] -bottom-[20px] left-0 transform -translate-x-1/2" >
-				<img src="./img/design.webp" alt="" className="z-0 h-3/4 lg:w-2/3 lg:h-auto top-10 absolute md:left-16 w-auto lg:left-4 lg:top-6" loading="lazy"/>
-				<img src="./img/coding.webp" alt="" className="z-0 h-1/3 lg:w-1/3 lg:h-auto top-2 absolute" loading="lazy"/>
-				<img src="./img/editor.webp" alt="" className="h-1/3 lg:w-1/3 lg:h-auto top-10 absolute right-0" loading="lazy"/>
-				<img src="./img/avatar-laptop.webp" alt="David Ochoa" className="w-min h-min md:h-full lg:h-min absolute bottom-0 max-h-[350px] left-1/2 -translate-x-1/2" loading="lazy"/>
+				<img src="./img/design.webp" alt="" className="z-0 h-3/4 lg:w-2/3 lg:h-auto top-10 absolute md:left-16 w-auto lg:left-4 lg:top-6" width={'300px'} height={'300px'}/>
+				<img src="./img/coding.webp" alt="" className="z-0 h-1/3 lg:w-1/3 lg:h-auto top-2 absolute" width={'130px'} height={'130px'} loading="lazy"/>
+				<img src="./img/editor.webp" alt="" className="h-1/3 lg:w-1/3 lg:h-auto top-10 absolute right-0" width={'130px'} height={'130px'} loading="lazy"/>
+				<img src="./img/avatar.webp" alt="David Ochoa" className="w-min h-min md:h-full lg:h-min absolute bottom-0 max-h-[350px] left-1/2 -translate-x-1/2" width={'350px'} height={'350px'}/>
 			</div>
       </div>
    )
 }
 
-export default { UserCard, AboutCard };
+export default { UserCard, MemojiCard };
