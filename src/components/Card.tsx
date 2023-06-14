@@ -4,7 +4,7 @@ import { useRef } from "react";
 export function UserCard() {
 	return (
 		<div className="flex flex-row flex-wrap items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
-			<img src="./img/profile.webp" alt="David Ochoa drinking coffee" className="w-14 rounded-full" />
+			<img src="./img/profile.webp" width={'55px'} height={'55px'} alt="David Ochoa drinking coffee" className="w-14 rounded-full" />
 			<div className="flex flex-col md:flex-grow">
 				<h3 className="text-lg text-white">Hi, I'm David Ochoa. 👋</h3>
 				<h4 className="text-sm text-slate-500">Junior Web Developer & Designer</h4>
