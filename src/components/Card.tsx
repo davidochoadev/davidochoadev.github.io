@@ -11,32 +11,25 @@ export function UserCard() {
 			</div>
 			<div className="flex w-full flex-row gap-2 duration-300 md:w-max">
 				<a
-					href=""
+					href="https://github.com/davidochoadev"
 					target="_blank"
 					className="rounded-lg bg-gradient-to-tl from-slate-800 via-slate-900 to-[#30413d] p-2 backdrop-blur-sm transition ease-in-out duration-300 delay-100 hover:scale-110"
 				>
 					<img src="./github.svg" alt="" className="h-6 w-6" />
 				</a>
 				<a
-					href=""
+					href="https://twitter.com/davidochoadev"
 					target="_blank"
 					className="rounded-lg bg-gradient-to-tl from-slate-800 via-slate-900 to-[#30413d] p-2 backdrop-blur-sm transition ease-in-out duration-300 delay-100 hover:scale-110 "
 				>
 					<img src="./twitter.svg" alt="" className="h-6 w-6" />
 				</a>
 				<a
-					href=""
+					href="https://linkedin.com/in/davidochoadev"
 					target="_blank"
 					className="rounded-lg bg-gradient-to-tl from-slate-800 via-slate-900 to-[#30413d] p-2 backdrop-blur-sm transition ease-in-out duration-300 delay-100 hover:scale-110 "
 				>
 					<img src="./linkedin.svg" alt="" className="h-6 w-6" />
-				</a>
-				<a
-					href=""
-					target="_blank"
-					className="rounded-lg bg-gradient-to-tl from-slate-800 via-slate-900 to-[#30413d] p-2 backdrop-blur-sm transition ease-in-out duration-300 delay-100 hover:scale-110 "
-				>
-					<img src="./whatsapp.svg" alt="" className="h-6 w-6" />
 				</a>
 			</div>
 			<h1 className="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl">
@@ -65,7 +58,7 @@ export function AboutCard() {
     });
     
 	return (
-		<div className="flex flex-row flex-wrap items-center gap-5 rounded-xl bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-[#33DDB3] via-[#1D7776] to-[#071038] p-4 backdrop-blur-xl lg:w-1/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr lg:p-14 overflow-hidden">
+		<div className="flex min-h-[400px] flex-row flex-wrap items-center gap-5 rounded-xl bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-[#33DDB3] via-[#1D7776] to-[#071038] backdrop-blur-xl lg:w-1/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr overflow-hidden">
          <div ref={ref} className="absolute left-0 transform -translate-y-1/2 w-full -bottom-[0px]">
             <div className="w-[400px] h-[400px] rounded-full bg-[#33DDB3] absolute -bottom-[400px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-50"></div>
             <div className="w-[480px] h-[480px] rounded-full bg-[#2AB49A]  absolute -bottom-[480px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-40"></div>
@@ -73,7 +66,12 @@ export function AboutCard() {
             <div className="w-[640px] h-[640px] rounded-full bg-[#196269] absolute -bottom-[640px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-20"></div>
             <div className="w-[720px] h-[720px] rounded-full bg-[#103951] absolute -bottom-[720px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10"></div>
          </div>
-         <img ref={ref2} src="./avatar-laptop.png" alt="David Ochoa" className="z-[60] absolute -bottom-[20px] left-0 w-full transform -translate-x-1/2" />
+			<div ref={ref2} className="w-full h-full absolute z-[60] -bottom-[20px] left-0 transform -translate-x-1/2" >
+				<img src="./design.png" alt="" className="z-0 h-3/4 lg:w-2/3 lg:h-auto top-10 absolute md:left-16 w-auto lg:left-4 lg:top-6" />
+				<img src="./coding.png" alt="" className="z-0 h-1/3 lg:w-1/3 lg:h-auto top-2 absolute" />
+				<img src="./editor.png" alt="" className="h-1/3 lg:w-1/3 lg:h-auto top-10 absolute right-0"/>
+				<img src="./avatar-laptop.png" alt="David Ochoa" className="w-min h-min md:h-full lg:h-min absolute bottom-0 max-h-[350px] left-1/2 -translate-x-1/2"/>
+			</div>
       </div>
    )
 }
