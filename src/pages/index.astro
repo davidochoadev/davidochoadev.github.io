@@ -1,9 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import {UserCard, AboutCard} from '../components/Card';
 ---
 
 <Layout title="David Ochoa | Web Developer">
-	<main>
+	<header class="flex flex-row p-4 backdrop-blur-sm py-10 fixed top-0 z-10 w-full bg-opacity-50 bg-slate-950">
+		<div class="flex justify-center items-center w-full md:justify-start font-mono">
+			<h1 class="text-xl text-white">davidochoa<strong class="uppercase text-slate-500">{'.<dev>'} </strong></h1>
+		</div>
+		<ul class="hidden md:flex md:flex-row md:gap-4 md:flex-grow md:items-center md:justify-end text-[#33ddb3]">
+			<li>About</li>
+			<li>Skills</li>
+			<li>Contacts</li>
+		</ul>
+	</header>
+	<main class="p-4 flex flex-col gap-4 mt-24 lg:p-8">
+		<div class="flex flex-col lg:flex-nowrap lg:flex-row gap-4 lg:gap-8">
+			<UserCard/>
+			<AboutCard client:load/>
+		</div>
 	</main>
+	<footer>
+
+	</footer>
 </Layout>
