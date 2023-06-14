@@ -15,21 +15,21 @@ export function UserCard() {
 					target="_blank"
 					className="rounded-lg bg-gradient-to-tl from-slate-800 via-slate-900 to-[#30413d] p-2 backdrop-blur-sm transition ease-in-out duration-300 delay-100 hover:scale-110"
 				>
-					<img src="./github.svg" alt="" className="h-6 w-6" />
+					<img src="./github.svg" alt="" className="h-6 w-6" loading="lazy"/>
 				</a>
 				<a
 					href="https://twitter.com/davidochoadev"
 					target="_blank"
 					className="rounded-lg bg-gradient-to-tl from-slate-800 via-slate-900 to-[#30413d] p-2 backdrop-blur-sm transition ease-in-out duration-300 delay-100 hover:scale-110 "
 				>
-					<img src="./twitter.svg" alt="" className="h-6 w-6" />
+					<img src="./twitter.svg" alt="" className="h-6 w-6" loading="lazy"/>
 				</a>
 				<a
 					href="https://linkedin.com/in/davidochoadev"
 					target="_blank"
 					className="rounded-lg bg-gradient-to-tl from-slate-800 via-slate-900 to-[#30413d] p-2 backdrop-blur-sm transition ease-in-out duration-300 delay-100 hover:scale-110 "
 				>
-					<img src="./linkedin.svg" alt="" className="h-6 w-6" />
+					<img src="./linkedin.svg" alt="" className="h-6 w-6" loading="lazy"/>
 				</a>
 			</div>
 			<h1 className="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl">
@@ -67,10 +67,10 @@ export function AboutCard() {
             <div className="w-[720px] h-[720px] rounded-full bg-[#103951] absolute -bottom-[720px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10"></div>
          </div>
 			<div ref={ref2} className="w-full h-full absolute z-[60] -bottom-[20px] left-0 transform -translate-x-1/2" >
-				<img src="./design.png" alt="" className="z-0 h-3/4 lg:w-2/3 lg:h-auto top-10 absolute md:left-16 w-auto lg:left-4 lg:top-6" />
-				<img src="./coding.png" alt="" className="z-0 h-1/3 lg:w-1/3 lg:h-auto top-2 absolute" />
-				<img src="./editor.png" alt="" className="h-1/3 lg:w-1/3 lg:h-auto top-10 absolute right-0"/>
-				<img src="./avatar-laptop.png" alt="David Ochoa" className="w-min h-min md:h-full lg:h-min absolute bottom-0 max-h-[350px] left-1/2 -translate-x-1/2"/>
+				<img src="./design.webp" alt="" className="z-0 h-3/4 lg:w-2/3 lg:h-auto top-10 absolute md:left-16 w-auto lg:left-4 lg:top-6" loading="lazy"/>
+				<img src="./coding.webp" alt="" className="z-0 h-1/3 lg:w-1/3 lg:h-auto top-2 absolute" loading="lazy"/>
+				<img src="./editor.webp" alt="" className="h-1/3 lg:w-1/3 lg:h-auto top-10 absolute right-0" loading="lazy"/>
+				<img src="./avatar-laptop.webp" alt="David Ochoa" className="w-min h-min md:h-full lg:h-min absolute bottom-0 max-h-[350px] left-1/2 -translate-x-1/2" loading="lazy"/>
 			</div>
       </div>
    )
