@@ -52,8 +52,7 @@ export function MemojiCard() {
 
 export function SocialCard() {
 	return (
-		<div className="max-w-[400px] max-h-[400px] min-h-[400px] flex flex-row flex-wrap justify-center items-center gap-5 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr lg:p-14">
-			<div className="grid grid-cols-2 grid-rows-2 gap-4 content-center">
+		<div className="max-w-[400px] max-h-[400px] min-h-[400px] flex flex-row flex-wrap justify-center items-center gap-5 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr lg:p-10">
 				<a href="https://github.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
 					<img src="./img/github.webp" alt="Github" className="w-32 h-32"/>
 				</a>
@@ -66,21 +65,28 @@ export function SocialCard() {
 				<a href="https://api.whatsapp.com/send?phone=393517908366" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
 					<img src="./img/whatsapp.webp" alt="Twitter" className="w-[143px] h-[143px]"/>
 				</a>
-			</div>
 		</div>
 	)
 }
 
 export function ReadCvCard() {
 	return (
-		<div className="max-w-[400px] max-h-[400px] min-h-[400px] flex flex-row flex-no-wrap justify-start items-start gap-5 rounded-xl bg-gradient-to-br from-slate-200 via-slate-500 to-slate-700 p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr lg:p-14">
+		<div className="max-w-[400px] max-h-[400px] min-h-[400px] flex flex-col flex-no-wrap justify-center items-center gap-10 rounded-xl bg-gradient-to-br from-slate-200 via-slate-500 to-slate-700 p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr lg:p-10">
 			<div className="flex flex-row gap-4 justify-center items-center">
 				<a href="https://read.cv/davidochoa.dev" target="_blank" className="min-h-[128px] min-w-[128px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-slate-100 shadow-md drop-shadow-md flex justify-center items-center">
 					<img src="./img/readcv.svg" alt="" className="w-20 h-20"/>
 				</a>
-				<h2 className="font-mono text-xl text-slate-800 ">
+				<h3 className="font-mono text-xl text-slate-800 ">
 					Check my Resume on read.cv
-				</h2>
+				</h3>
+			</div>
+			<div  className="flex flex-row gap-4 justify-center items-center">
+				<a href="https://www.frontendmentor.io/profile/davidochoadev" target="_blank" className="min-h-[128px] min-w-[128px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-white shadow-md drop-shadow-md flex justify-center items-center">
+					<img src="./img/frontendmentor.webp" alt="Frontend Mentor" className="w-[128px] h-[128px]" />
+				</a>
+				<h3 className="font-mono text-xl text-slate-800 ">
+					Or my profile on Frontend Mentor
+				</h3>
 			</div>
 		</div>
 	)
