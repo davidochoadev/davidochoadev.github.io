@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 export function UserCard() {
 	return (
-		<div className="flex flex-row flex-wrap items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
+		<div className="lg:max-w-[800px] min-h-[300px] flex flex-row flex-wrap items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
 			<img src="./img/profile.webp" width={'55px'} height={'55px'} alt="David Ochoa drinking coffee" className="w-14 rounded-full" />
 			<div className="flex flex-col md:flex-grow">
 				<h3 className="text-lg text-white">Hi, I'm David Ochoa. 👋</h3>
@@ -32,7 +32,7 @@ export function UserCard() {
 					<img src="./img/linkedin.svg" alt="" className="h-6 w-6" loading="lazy"/>
 				</a>
 			</div>
-			<h1 className="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl">
+			<h1 className="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl md:text-5xl">
 				Driven to design and develop websites.
 			</h1>
 			<p className="text-slate-600 lg:text-2xl">
@@ -58,7 +58,7 @@ export function MemojiCard() {
     });
     
 	return (
-		<div className="flex min-h-[400px] flex-row flex-wrap items-center gap-5 rounded-xl bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-[#33DDB3] via-[#1D7776] to-[#071038] backdrop-blur-xl lg:w-1/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr overflow-hidden">
+		<div className="flex min-h-[400px] lg:max-w-[400px] flex-row flex-wrap items-center gap-5 rounded-xl bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-[#33DDB3] via-[#1D7776] to-[#071038] backdrop-blur-xl lg:w-1/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr overflow-hidden">
          <div ref={ref} className="absolute left-0 transform -translate-y-1/2 w-full -bottom-[0px]">
             <div className="w-[400px] h-[400px] rounded-full bg-[#33DDB3] absolute -bottom-[400px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-50"></div>
             <div className="w-[480px] h-[480px] rounded-full bg-[#2AB49A]  absolute -bottom-[480px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-40"></div>
@@ -67,13 +67,31 @@ export function MemojiCard() {
             <div className="w-[720px] h-[720px] rounded-full bg-[#103951] absolute -bottom-[720px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10"></div>
          </div>
 			<div ref={ref2} className="w-full h-full absolute z-[60] -bottom-[20px] left-0 transform -translate-x-1/2" >
-				<img src="./img/design.webp" alt="" className="z-0 h-3/4 lg:w-2/3 lg:h-auto top-10 absolute md:left-16 w-auto lg:left-4 lg:top-6" width={'300px'} height={'300px'}/>
-				<img src="./img/coding.webp" alt="" className="z-0 h-1/3 lg:w-1/3 lg:h-auto top-2 absolute" width={'130px'} height={'130px'} loading="lazy"/>
-				<img src="./img/editor.webp" alt="" className="h-1/3 lg:w-1/3 lg:h-auto top-10 absolute right-0" width={'130px'} height={'130px'} loading="lazy"/>
 				<img src="./img/avatar.webp" alt="David Ochoa" className="w-min h-min md:h-full lg:h-min absolute bottom-0 max-h-[350px] left-1/2 -translate-x-1/2" width={'350px'} height={'350px'}/>
 			</div>
       </div>
    )
 }
 
-export default { UserCard, MemojiCard };
+export function SocialCard() {
+	return (
+		<div className="max-w-[400px] max-h-[400px] min-h-[400px] flex flex-row flex-wrap justify-center items-center gap-5 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr lg:p-14">
+			<div className="grid grid-cols-2 grid-rows-2 gap-4 content-center">
+				<a href="https://github.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
+					<img src="./img/github.webp" alt="Github" className="w-32 h-32"/>
+				</a>
+				<a href="" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
+					<img src="./img/linkedin.webp" alt="Linkedin" className="w-32 h-32"/>
+				</a>
+				<a href="" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
+					<img src="./img/twitter.webp" alt="Twitter" className="w-[143px] h-[143px]"/>
+				</a>
+				<a href="" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
+					<img src="./img/whatsapp.webp" alt="Twitter" className="w-[143px] h-[143px]"/>
+				</a>
+			</div>
+		</div>
+	)
+}
+
+export default { UserCard, MemojiCard, SocialCard };
