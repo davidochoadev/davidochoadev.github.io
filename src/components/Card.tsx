@@ -50,6 +50,14 @@ export function MemojiCard() {
    )
 }
 
+export function LookingCard() {
+	return (
+	<div className="max-w-[400px] max-h-[400px] flex flex-row flex-wrap content-center justify-center items-center gap-4 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10">
+		<h2 className="py-2 font-mono text-xl text-white lg:py-8 lg:text-5xl md:text-5xl">Currently, I am actively enhancing my web development skills and seeking opportunities for collaboration.</h2>
+	</div>
+	)
+}
+
 export function SocialCard() {
 	return (
 		<div className="max-w-[400px] max-h-[400px] flex flex-row flex-wrap content-center justify-center items-center gap-4 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10">
@@ -92,4 +100,4 @@ export function ReadCvCard() {
 	)
 }
 
-export default { UserCard, MemojiCard, SocialCard, ReadCvCard };
+export default { UserCard, MemojiCard, SocialCard, ReadCvCard, LookingCard };

@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import {UserCard, MemojiCard, SocialCard, ReadCvCard} from '../components/Card';
+import {UserCard, MemojiCard, SocialCard, ReadCvCard, LookingCard} from '../components/Card';
 ---
 
 <Layout title="David Ochoa | Web Developer">
@@ -20,6 +20,7 @@ import {UserCard, MemojiCard, SocialCard, ReadCvCard} from '../components/Card';
 			<MemojiCard client:idle/>
 		</div>
 		<div class="flex flex-row flex-wrap lg:flex-nowrap lg:flex-row gap-4 lg:gap-8 justify-center">
+			<LookingCard />
 			<SocialCard />
 			<ReadCvCard />
 		</div>
