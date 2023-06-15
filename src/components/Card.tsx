@@ -12,7 +12,7 @@ export function UserCard() {
 			<h1 className="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl md:text-5xl">
 				Driven to design and develop websites.
 			</h1>
-			<p className="text-slate-600 lg:text-2xl">
+			<p className="text-slate-600 md:text-xl lg:text-2xl">
 				Fueled by a deep passion for constant learning, I am always seeking new knowledge and skills
 				to enhance my abilities.
 			</p>
@@ -52,18 +52,18 @@ export function MemojiCard() {
 
 export function SocialCard() {
 	return (
-		<div className="max-w-[400px] max-h-[400px] min-h-[400px] flex flex-row flex-wrap justify-center items-center gap-5 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr lg:p-10">
-				<a href="https://github.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
-					<img src="./img/github.webp" alt="Github" className="w-32 h-32"/>
+		<div className="max-w-[400px] max-h-[400px] flex flex-row flex-wrap content-center justify-center items-center gap-4 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10">
+				<a href="https://github.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
+					<img src="./img/github.webp" alt="Github" className="w-20 h-20" width={'80px'} height={'80px'}/>
 				</a>
-				<a href="https://linkedin.com/in/davidochoadev" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
-					<img src="./img/linkedin.webp" alt="Linkedin" className="w-32 h-32"/>
+				<a href="https://linkedin.com/in/davidochoadev" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
+					<img src="./img/linkedin.webp" alt="Linkedin" className="w-20 h-20"width={'80px'} height={'80px'}/>
 				</a>
-				<a href="https://twitter.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
-					<img src="./img/twitter.webp" alt="Twitter" className="w-[143px] h-[143px]"/>
+				<a href="https://twitter.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
+					<img src="./img/twitter.webp" alt="Twitter" className="w-[92px] h-[92px]" width={'92px'} height={'92px'}/>
 				</a>
-				<a href="https://api.whatsapp.com/send?phone=393517908366" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
-					<img src="./img/whatsapp.webp" alt="Twitter" className="w-[143px] h-[143px]"/>
+				<a href="https://api.whatsapp.com/send?phone=393517908366" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
+					<img src="./img/whatsapp.webp" alt="Twitter" className="w-[92px] h-[92px]" width={'92px'} height={'92px'}/>
 				</a>
 		</div>
 	)
@@ -71,20 +71,20 @@ export function SocialCard() {
 
 export function ReadCvCard() {
 	return (
-		<div className="max-w-[400px] max-h-[400px] min-h-[400px] flex flex-col flex-no-wrap justify-center items-center gap-10 rounded-xl bg-gradient-to-br from-slate-200 via-slate-500 to-slate-700 p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr lg:p-10">
+		<div className="max-w-[400px] max-h-[400px] min-h-[400px] content-center flex flex-col flex-wrap justify-center items-center gap-8 rounded-xl bg-gradient-to-br from-slate-200 via-slate-400 to-slate-600 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr p-10">
 			<div className="flex flex-row gap-4 justify-center items-center">
-				<a href="https://read.cv/davidochoa.dev" target="_blank" className="min-h-[128px] min-w-[128px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-slate-100 shadow-md drop-shadow-md flex justify-center items-center">
-					<img src="./img/readcv.svg" alt="" className="w-20 h-20"/>
+				<a href="https://read.cv/davidochoa.dev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-slate-100 shadow-md drop-shadow-md flex justify-center items-center">
+					<img src="./img/readcv.svg" alt="" className="w-[60px] h-[60px]" width={'60px'} height={'60px'}/>
 				</a>
-				<h3 className="font-mono text-xl text-slate-800 ">
+				<h3 className="font-mono text-xl text-slate-700">
 					Check my Resume on read.cv
 				</h3>
 			</div>
 			<div  className="flex flex-row gap-4 justify-center items-center">
-				<a href="https://www.frontendmentor.io/profile/davidochoadev" target="_blank" className="min-h-[128px] min-w-[128px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-white shadow-md drop-shadow-md flex justify-center items-center">
-					<img src="./img/frontendmentor.webp" alt="Frontend Mentor" className="w-[128px] h-[128px]" />
+				<a href="https://www.frontendmentor.io/profile/davidochoadev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-white shadow-md drop-shadow-md flex justify-center items-center">
+					<img src="./img/frontendmentor.webp" alt="Frontend Mentor" className="w-[70px] h-[70px]" width={'70px'} height={'70px'}/>
 				</a>
-				<h3 className="font-mono text-xl text-slate-800 ">
+				<h3 className="font-mono text-xl text-slate-700">
 					Or my profile on Frontend Mentor
 				</h3>
 			</div>
