@@ -6,12 +6,12 @@ export function UserCard() {
 		<div className="lg:max-w-[800px] min-h-[300px] flex flex-row flex-wrap items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
 			<img src="./img/profile.webp" width={'55px'} height={'55px'} alt="David Ochoa drinking coffee" className="w-14 rounded-full" />
 			<div className="flex flex-col md:flex-grow">
-				<h3 className="text-md md:text-lg text-white">Hi, I'm David Ochoa. 👋</h3>
-				<h4 className="text-xs md:text-sm text-slate-500">Junior Web Developer & Web Designer</h4>
+				<h1 className="text-md md:text-lg text-white">Hi, I'm David Ochoa. 👋</h1>
+				<h2 className="text-xs md:text-sm text-slate-500">Junior Web Developer & Web Designer</h2>
 			</div>
-			<h1 className="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl md:text-5xl">
+			<h3 className="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl md:text-5xl">
 				Driven to design and develop websites.
-			</h1>
+			</h3>
 			<p className="text-slate-600 md:text-xl lg:text-2xl">
 				Fueled by a deep passion for constant learning, I am always seeking new knowledge and skills
 				to enhance my abilities.
@@ -52,15 +52,16 @@ export function MemojiCard() {
 
 export function LookingCard() {
 	return (
-	<div className="max-w-[400px] max-h-[400px] flex flex-row flex-wrap content-center justify-center items-center gap-4 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10">
-		<h2 className="py-2 font-mono text-xl text-white lg:py-8 lg:text-5xl md:text-5xl">Currently, I am actively enhancing my web development skills and seeking opportunities for collaboration.</h2>
+	<div className="lg:max-w-[400px] flex flex-row flex-wrap content-center justify-center items-center gap-4 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10 overflow-hidden">
+		<h2 className="py-2 font-mono text-xl text-white lg:py-8 ">Currently dedicated to advancing my web development skills and open to collaborative projects.</h2>
+		<p className="font-mono text-sm text-slate-400">I believe in the power of collaboration! Connect with me on my social media channels listed below, and let's exchange ideas, insights, and expertise to craft exceptional web projects.</p>
 	</div>
 	)
 }
 
 export function SocialCard() {
 	return (
-		<div className="max-w-[400px] max-h-[400px] flex flex-row flex-wrap content-center justify-center items-center gap-4 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10">
+		<div className="lg:max-w-[400px] w-full flex flex-row flex-wrap content-center justify-center items-center gap-4 rounded-xl bg-gradient-to-bl from-slate-950 via-slate-900 to-[#05604b] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10">
 				<a href="https://github.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
 					<img src="./img/github.webp" alt="Github" className="w-20 h-20" width={'80px'} height={'80px'}/>
 				</a>
@@ -79,7 +80,7 @@ export function SocialCard() {
 
 export function ReadCvCard() {
 	return (
-		<div className="max-w-[400px] max-h-[400px] min-h-[400px] content-center flex flex-col flex-wrap justify-center items-center gap-8 rounded-xl bg-gradient-to-br from-slate-200 via-slate-400 to-slate-600 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr p-10">
+		<div className="lg:max-w-[400px] w-full content-center flex flex-row md:flex-col flex-wrap justify-center items-center gap-8 rounded-xl bg-gradient-to-br from-slate-200 via-slate-400 to-slate-600 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr p-10">
 			<div className="flex flex-row gap-4 justify-center items-center">
 				<a href="https://read.cv/davidochoa.dev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-slate-100 shadow-md drop-shadow-md flex justify-center items-center">
 					<img src="./img/readcv.svg" alt="" className="w-[60px] h-[60px]" width={'60px'} height={'60px'}/>
