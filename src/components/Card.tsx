@@ -80,13 +80,13 @@ export function SocialCard() {
 				<a href="https://github.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
 					<img src="./img/github.webp" alt="Github" className="w-32 h-32"/>
 				</a>
-				<a href="" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
+				<a href="https://linkedin.com/in/davidochoadev" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
 					<img src="./img/linkedin.webp" alt="Linkedin" className="w-32 h-32"/>
 				</a>
-				<a href="" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
+				<a href="https://twitter.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
 					<img src="./img/twitter.webp" alt="Twitter" className="w-[143px] h-[143px]"/>
 				</a>
-				<a href="" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
+				<a href="https://api.whatsapp.com/send?phone=393517908366" target="_blank" className="flex justify-center items-center w-[150px] h-[150px] hover:scale-110 transition duration-300">
 					<img src="./img/whatsapp.webp" alt="Twitter" className="w-[143px] h-[143px]"/>
 				</a>
 			</div>
