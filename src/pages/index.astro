@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import {UserCard, MemojiCard, SocialCard} from '../components/Card';
+import {UserCard, MemojiCard, SocialCard, ReadCvCard} from '../components/Card';
 ---
 
 <Layout title="David Ochoa | Web Developer">
@@ -14,13 +14,14 @@ import {UserCard, MemojiCard, SocialCard} from '../components/Card';
 			<li>Contacts</li>
 		</ul>
 	</header>
-	<main class="p-4 flex flex-col gap-4 mt-24 lg:p-8">
+	<main class="p-4 flex flex-col gap-4 mt-24 lg:p-8 lg:gap-8">
 		<div class="flex flex-col lg:flex-nowrap lg:flex-row gap-4 lg:gap-8 justify-center">
 			<UserCard/>
 			<MemojiCard client:idle/>
 		</div>
-		<div class="flex flex-col lg:flex-nowrap lg:flex-row gap-4 lg:gap-8 justify-center">
+		<div class="flex flex-row flex-wrap lg:flex-nowrap lg:flex-row gap-4 lg:gap-8 justify-center">
 			<SocialCard />
+			<ReadCvCard />
 		</div>
 	</main>
 	<footer>
