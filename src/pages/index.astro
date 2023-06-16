@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import {UserCard, MemojiCard, SocialCard, ReadCvCard, LookingCard} from '../components/Card';
+import {UserCard, MemojiCard, SocialCard, ReadCvCard, LookingCard } from '../components/Card';
+import { Works } from '../components/Works';
 ---
 
 <Layout title="David Ochoa | Web Developer">
@@ -23,6 +24,9 @@ import {UserCard, MemojiCard, SocialCard, ReadCvCard, LookingCard} from '../comp
 			<LookingCard client:idle/>
 			<SocialCard />
 			<ReadCvCard />
+		</div>
+		<div>
+			<Works client:idle/>
 		</div>
 	</main>
 	<footer>
