@@ -76,9 +76,9 @@ export function Works() {
                )
             }
          </div>
-         <div className='flex-grow lg:grid lg:grid-cols-2 lg:grid-rows-2'>
+         <div className='flex-grow lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-4'>
             {currentRecords.map((item, index) => (
-               <div key={index}>
+               <div key={index} className='backdrop-blur-md bg-slate-700/50 p-4 rounded-xl'>
                   <img src={`https://raw.githubusercontent.com/davidochoadev${item.imageUrl}`} alt="" height={'200px'} width={'200px'}/>
                   <p className='text-white'>{item.projectName}</p>
                </div>
