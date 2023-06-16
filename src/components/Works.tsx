@@ -27,13 +27,14 @@ export function Works() {
 	};
 
 	return (
-		<div className="tranistion-all flex min-h-[300px] flex-row flex-wrap items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl duration-300 ease-in-out hover:scale-105 hover:rounded-br-3xl hover:rounded-tl-3xl lg:w-2/3 lg:max-w-[830px] lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
-      <dotlottie-player
-        src="./img/animation.lottie"
-        autoplay
-        loop
-        style={{ height: '100%', width: '100%' }}
-      />
+		<div className="tranistion-all flex min-h-[300px] flex-row flex-wrap items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl duration-300 ease-in-out hover:scale-105 hover:rounded-br-3xl hover:rounded-tl-3xl lg:w-full lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
+		<div className="absolute w-full h-full">
+			<dotlottie-player
+			src="./img/animation.lottie"
+			autoplay
+			loop
+			/>
+		</div>
 			<div>
 				{currentPage !== 1 ? (
 					<button onClick={prevPage} className="bg-slate-300 p-2 ">
