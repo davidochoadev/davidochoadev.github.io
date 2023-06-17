@@ -3,14 +3,14 @@
      {
        "title": "Intro Component With Sign Up Form",
        "projectName": "intro-component-with-sign-up-form",
-       "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg",
+       "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.webp",
        "link" : "https://github.com/davidochoadev/intro-component-with-sign-up-form"
      },
      {
-       "title": "Results Summary Component",
-       "projectName": "results-summary-component",
-       "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg",
-       "link" : "https://github.com/davidochoadev/results-summary-component"
+      "title": "Base Apparel Coming Soon",
+      "projectName":"base-apparel-coming-soon",
+      "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg",
+      "link" : "https://github.com/davidochoadev/base-apparel-coming-soon"
      },
      {
        "title": "Interactive Rating Component",
@@ -19,10 +19,10 @@
        "link" : "https://github.com/davidochoadev/interactive-rating-component"
      },
      {
-      "title": "Base Apparel Coming Soon",
-      "projectName":"base-apparel-coming-soon",
-      "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg",
-      "link" : "https://github.com/davidochoadev/base-apparel-coming-soon"
-     }
+      "title": "Results Summary Component",
+      "projectName": "results-summary-component",
+      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg",
+      "link" : "https://github.com/davidochoadev/results-summary-component"
+    }
    ]
  }
