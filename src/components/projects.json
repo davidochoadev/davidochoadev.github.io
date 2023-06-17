@@ -1,224 +1,28 @@
 {
    "projects": [
      {
+       "title": "Intro Component With Sign Up Form",
        "projectName": "intro-component-with-sign-up-form",
-       "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
+       "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg",
+       "link" : ""
      },
      {
+       "title": "Results Summary Component",
        "projectName": "results-summary-component",
-       "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
+       "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg",
+       "link" : ""
      },
      {
+       "title": "Interactive Rating Component",
        "projectName": "interactive-rating-component",
-       "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
+       "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg",
+       "link" : ""
      },
      {
+      "title": "Base Apparel Coming Soon",
       "projectName":"base-apparel-coming-soon",
-      "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-     },
-     {
-      "projectName":"base-apparel-coming-soon",
-      "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-     },
-     {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "intro-component-with-sign-up-form",
-      "imageUrl": "/intro-component-with-sign-up-form/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "results-summary-component",
-      "imageUrl" : "/results-summary-component/main/design/desktop-preview.jpg"
-    },
-    {
-      "projectName": "interactive-rating-component",
-      "imageUrl" : "/interactive-rating-component/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    },
-    {
-     "projectName":"base-apparel-coming-soon",
-     "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg"
-    }
+      "imageUrl":"/base-apparel-coming-soon/main/design/desktop-preview.jpg",
+      "link" : ""
+     }
    ]
  }

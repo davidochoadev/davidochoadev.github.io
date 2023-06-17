@@ -19,10 +19,13 @@ export function Works() {
 	};
 
 	return (
-		<div className="tranistion-all flex min-h-[300px] flex-row items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl duration-300 ease-in-out hover:scale-105 hover:rounded-br-3xl hover:rounded-tl-3xl lg:w-full lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
+		<div className="tranistion-all flex min-h-[300px] w-full flex-row items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl duration-300 ease-in-out hover:rounded-br-3xl hover:rounded-tl-3xl lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
 			<div className="w-1/12">
 				{currentPage !== 1 ? (
-					<button onClick={prevPage} className="p-4 rounded-full bg-gradient-to-tl from-slate-900 to-[#05604b] shadow-md drop-shadow-md transition duration-300 hover:scale-125">
+					<button
+						onClick={prevPage}
+						className="rounded-full bg-gradient-to-tl from-slate-900 to-[#05604b] p-4 shadow-md drop-shadow-md transition duration-300 hover:scale-125"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="20"
@@ -38,7 +41,10 @@ export function Works() {
 						</svg>
 					</button>
 				) : (
-					<button className="bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 disabled:opacity-40 rounded-full opacity-10 shadow-md drop-shadow-md" disabled>
+					<button
+						className="rounded-full bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 opacity-10 shadow-md drop-shadow-md disabled:opacity-40"
+						disabled
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="20"
@@ -55,23 +61,50 @@ export function Works() {
 					</button>
 				)}
 			</div>
-			<div className="grid h-full w-full grid-cols-2 grid-rows-2 place-items-center gap-8">
+			<div className="grid h-full w-full grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 place-items-center gap-8">
 				{currentRecords.map((item, index) => (
-					<div key={index} className="w-[200px] md:w-[250px] lg:w-[400px] md:h-autorounded-xl bg-slate-700/50 p-8 backdrop-blur-md flex justify-center flex-col items-center">
+					<a
+						key={index}
+						className="md:h-autorounded-xl flex w-full cursor-pointer flex-col items-center justify-center rounded-xl bg-slate-700/50 p-8 backdrop-blur-md transition duration-300 ease-in-out hover:scale-105 md:w-full lg:w-full"
+						href={item.link}
+						target="_blank"
+					>
 						<img
 							src={`https://raw.githubusercontent.com/davidochoadev${item.imageUrl}`}
 							alt=""
 							height={'100%'}
 							width={'100%'}
-							className='md:w-[200px] md:h-auto'
+							className="rounded-lg shadow-lg drop-shadow-lg md:h-auto md:w-[200px] lg:w-[400px]"
 						/>
-						<p className="text-white">{item.projectName}</p>
-					</div>
+						<p className="pt-6 text-slate-500 text-center text-xs lg:text-base">{item.title}</p>
+					</a>
 				))}
 			</div>
 			<div className="w-1/12">
-				{currentPage !== nPages && (
-					<button onClick={nextPage} className="p-4 rounded-full bg-gradient-to-tl from-slate-950 to-[#05604b] shadow-md drop-shadow-md transition duration-300 hover:scale-125">
+				{currentPage !== nPages ? (
+					<button
+						onClick={nextPage}
+						className="rounded-full bg-gradient-to-tl from-slate-950 to-[#05604b] p-4 shadow-md drop-shadow-md transition duration-300 hover:scale-125"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							fill="white"
+							className="bi bi-chevron-right"
+							viewBox="0 0 16 16"
+						>
+							<path
+								fillRule="evenodd"
+								d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+							/>
+						</svg>
+					</button>
+				) : (
+					<button
+						className="rounded-full bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 opacity-10 shadow-md drop-shadow-md disabled:opacity-40"
+						disabled
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="20"
