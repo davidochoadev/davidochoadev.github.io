@@ -65,7 +65,7 @@ export function Works() {
 				{currentRecords.map((item, index) => (
 					<a
 						key={index}
-						className="md:h-autorounded-xl flex w-full cursor-pointer flex-col items-center justify-center rounded-xl bg-slate-700/50 p-8 backdrop-blur-md transition duration-300 ease-in-out hover:scale-105 md:w-full lg:w-full"
+						className="md:h-autorounded-xl flex w-full cursor-pointer flex-col items-center justify-center rounded-xl bg-slate-700/50 p-8 backdrop-blur-md transition duration-300 ease-in-out hover:scale-105 md:w-full lg:w-full group"
 						href={item.link}
 						target="_blank"
 					>
@@ -76,7 +76,7 @@ export function Works() {
 							width={'100%'}
 							className="rounded-lg shadow-lg drop-shadow-lg md:h-auto md:w-[200px] lg:w-[400px]"
 						/>
-						<p className="pt-6 text-slate-500 text-center text-xs lg:text-base">{item.title}</p>
+						<p className="pt-6 text-slate-500 text-center text-xs lg:text-base group-hover:text-slate-300 transition ease-in-out duration-300">{item.title}</p>
 					</a>
 				))}
 			</div>
