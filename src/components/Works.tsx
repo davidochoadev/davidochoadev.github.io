@@ -65,7 +65,7 @@ export function Works() {
 				{currentRecords.map((item, index) => (
 					<a
 						key={index}
-						className="md:h-autorounded-xl flex w-full cursor-pointer flex-col items-center justify-center rounded-xl bg-slate-700/50 p-8 backdrop-blur-md transition duration-300 ease-in-out hover:scale-105 md:w-full lg:w-full group"
+						className="md:h-autorounded-xl flex w-full cursor-pointer flex-col items-center justify-center rounded-xl bg-slate-700/50 p-8 backdrop-blur-md transition duration-300 ease-in-out hover:bg-slate-600/50 hover:scale-105 md:w-full lg:w-full group"
 						href={item.link}
 						target="_blank"
 					>
