@@ -4,7 +4,7 @@ import { useRef } from "react";
 export function UserCard() {
 	return (
 		<div className=" min-h-[300px] flex flex-row flex-wrap items-center gap-5 rounded-xl shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14 hover:rounded-br-3xl hover:rounded-tl-3xl tranistion-all duration-300 hover:scale-105 ease-in-out">
-			<img src="./img/profile.webp" width={'55px'} height={'55px'} alt="David Ochoa drinking coffee" className="w-14 rounded-full" />
+			<img src="./img/profile.webp" width={'55px'} height={'55px'} alt="David Ochoa" className="w-14 rounded-full" />
 			<div className="flex flex-col md:flex-grow">
 				<h1 className="text-md md:text-lg text-white">Hi, I'm David Ochoa. 👋</h1>
 				<h2 className="text-xs md:text-sm text-slate-500">Junior Web Developer & Web Designer</h2>
@@ -57,7 +57,7 @@ export function MemojiCard() {
             <div className="w-[720px] h-[720px] bg-[#103951] absolute transform rotate-45 right-1/2 -bottom-[560px] translate-x-1/2 z-10"></div>
 			</div>
 			<div ref={ref2} className="w-full h-full absolute z-[60] -bottom-[20px] left-0 transform -translate-x-1/2" >
-				<img src="./img/avatar.webp" alt="David Ochoa" className="w-min h-min md:h-full lg:h-min absolute bottom-0 max-h-[350px] left-1/2 -translate-x-1/2" width={'350px'} height={'350px'}/>
+				<img src="./img/avatar.webp" alt="David Ochoa Memoji" className="w-min h-min md:h-full lg:h-min absolute bottom-0 max-h-[350px] left-1/2 -translate-x-1/2" width={'350px'} height={'350px'}/>
 			</div>
       </div>
    )
