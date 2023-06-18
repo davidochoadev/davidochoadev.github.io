@@ -19,14 +19,14 @@ export function Works() {
 	};
 
 	return (
-		<div className="transition-all flex min-h-[300px] w-full flex-col items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl duration-300 ease-in-out hover:rounded-br-3xl hover:rounded-tl-3xl lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
+		<div className="flex min-h-[300px] w-full flex-col items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl transition-all duration-300 ease-in-out hover:rounded-br-3xl hover:rounded-tl-3xl lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
 			<div>
 				<h2 className="text-center font-mono text-2xl text-white md:text-3xl">
 					Browse some of my projects! 👀
 				</h2>
 			</div>
-			<div className="flex h-full w-full flex-row items-center justify-center gap-5">
-				<div className="w-1/12">
+			<div className="flex h-full w-full flex-col items-center justify-center gap-5 md:flex-row">
+				<div className="hidden  w-1/12 md:block">
 					{currentPage !== 1 ? (
 						<button
 							onClick={prevPage}
@@ -88,7 +88,88 @@ export function Works() {
 						</a>
 					))}
 				</div>
-				<div className="w-1/12">
+				<div className="hidden w-1/12 md:block">
+					{currentPage !== nPages ? (
+						<button
+							onClick={nextPage}
+							className="rounded-full bg-gradient-to-tl from-slate-950 to-[#05604b] p-4 shadow-md drop-shadow-md transition duration-300 hover:scale-125"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								fill="white"
+								className="bi bi-chevron-right"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fillRule="evenodd"
+									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+								/>
+							</svg>
+						</button>
+					) : (
+						<button
+							className="rounded-full bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 opacity-10 shadow-md drop-shadow-md disabled:opacity-40"
+							disabled
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								fill="white"
+								className="bi bi-chevron-right"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fillRule="evenodd"
+									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+								/>
+							</svg>
+						</button>
+					)}
+				</div>
+				<div className="w-full md:hidden flex flex-row justify-center gap-4 items-center">
+					{currentPage !== 1 ? (
+						<button
+							onClick={prevPage}
+							className="rounded-full bg-gradient-to-tl from-slate-900 to-[#05604b] p-4 shadow-md drop-shadow-md transition duration-300 hover:scale-125"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								fill="white"
+								className="bi bi-chevron-left"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fillRule="evenodd"
+									d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+								/>
+							</svg>
+						</button>
+					) : (
+						<button
+							className="rounded-full bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 opacity-10 shadow-md drop-shadow-md disabled:opacity-40"
+							disabled
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								fill="white"
+								className="bi bi-chevron-left"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fillRule="evenodd"
+									d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+								/>
+							</svg>
+						</button>
+					)}
+					<p className='text-center text-slate-500'>{currentPage} of {nPages}</p>
 					{currentPage !== nPages ? (
 						<button
 							onClick={nextPage}
