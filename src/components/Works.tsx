@@ -19,13 +19,13 @@ export function Works() {
 	};
 
 	return (
-		<div className="tranistion-all flex min-h-[300px] w-full flex-col items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl duration-300 ease-in-out hover:rounded-br-3xl hover:rounded-tl-3xl lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
+		<div className="transition-all flex min-h-[300px] w-full flex-col items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl duration-300 ease-in-out hover:rounded-br-3xl hover:rounded-tl-3xl lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
 			<div>
-				<h2 className='text-white text-2xl md:text-3xl text-center font-mono'>
+				<h2 className="text-center font-mono text-2xl text-white md:text-3xl">
 					Browse some of my projects! 👀
 				</h2>
 			</div>
-			<div className='flex flex-row items-center justify-center w-full h-full gap-5'>
+			<div className="flex h-full w-full flex-row items-center justify-center gap-5">
 				<div className="w-1/12">
 					{currentPage !== 1 ? (
 						<button
