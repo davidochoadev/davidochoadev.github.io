@@ -20,12 +20,15 @@ export function Works() {
 
 	return (
 		<div className="flex min-h-[300px] w-full flex-col items-center gap-5 rounded-xl bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] backdrop-blur-xl transition-all duration-300 ease-in-out hover:rounded-br-3xl hover:rounded-tl-3xl lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14">
-			<div>
-				<h2 className="text-center font-mono text-2xl text-white md:text-3xl">
-					Browse some of my projects! 👀
+			<div className='py-4'>
+				<h2 className="text-center font-mono text-2xl text-white md:text-3xl py-4 lg:py-2">
+					My Code & Design Collection 
 				</h2>
+				<p className='text-slate-400 font-mono text-center lg:py-4 lg:px-32'>
+				Explore a variety of resources including components, landing pages, themes, and layouts. Click on the items below to access their respective source code repositories
+				</p>
 			</div>
-			<div className="flex h-full w-full flex-col items-center justify-center gap-5 md:flex-row">
+			<div className="flex h-full w-full flex-col items-center justify-center gap-5 md:flex-row p-2">
 				<div className="hidden  w-1/12 md:block">
 					{currentPage !== 1 ? (
 						<button
@@ -71,7 +74,7 @@ export function Works() {
 					{currentRecords.map((item, index) => (
 						<a
 							key={index}
-							className="md:h-autorounded-xl group flex w-full cursor-pointer flex-col items-center justify-center rounded-xl bg-slate-700/50 p-8 backdrop-blur-md transition duration-300 ease-in-out hover:scale-105 hover:bg-slate-600/50 md:w-full lg:w-full"
+							className="md:h-autorounded-xl shadow-md drop-shadow-md group flex w-full cursor-pointer flex-col items-center justify-center rounded-xl bg-slate-700/50 p-8 backdrop-blur-md transition duration-300 ease-in-out hover:scale-105 hover:bg-slate-600/50 md:w-full lg:w-full"
 							href={item.link}
 							target="_blank"
 						>
