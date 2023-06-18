@@ -34,6 +34,7 @@ export function Works() {
 						<button
 							onClick={prevPage}
 							className="rounded-full bg-gradient-to-tl from-slate-900 to-[#05604b] p-4 shadow-md drop-shadow-md transition duration-300 hover:scale-125"
+							aria-label="Previous Page"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -52,6 +53,7 @@ export function Works() {
 					) : (
 						<button
 							className="rounded-full bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 opacity-10 shadow-md drop-shadow-md disabled:opacity-40"
+							aria-label="Disabled Previous Page"
 							disabled
 						>
 							<svg
@@ -96,6 +98,7 @@ export function Works() {
 						<button
 							onClick={nextPage}
 							className="rounded-full bg-gradient-to-tl from-slate-950 to-[#05604b] p-4 shadow-md drop-shadow-md transition duration-300 hover:scale-125"
+							aria-label="Next Page"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -114,6 +117,7 @@ export function Works() {
 					) : (
 						<button
 							className="rounded-full bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 opacity-10 shadow-md drop-shadow-md disabled:opacity-40"
+							aria-label="Disabled next page"
 							disabled
 						>
 							<svg
@@ -137,6 +141,7 @@ export function Works() {
 						<button
 							onClick={prevPage}
 							className="rounded-full bg-gradient-to-tl from-slate-900 to-[#05604b] p-4 shadow-md drop-shadow-md transition duration-300 hover:scale-125"
+							aria-label="Previous Page"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -155,6 +160,7 @@ export function Works() {
 					) : (
 						<button
 							className="rounded-full bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 opacity-10 shadow-md drop-shadow-md disabled:opacity-40"
+							aria-label="Disabled Previous Page"
 							disabled
 						>
 							<svg
@@ -176,6 +182,7 @@ export function Works() {
 					{currentPage !== nPages ? (
 						<button
 							onClick={nextPage}
+							aria-label="Next Page"
 							className="rounded-full bg-gradient-to-tl from-slate-950 to-[#05604b] p-4 shadow-md drop-shadow-md transition duration-300 hover:scale-125"
 						>
 							<svg
@@ -195,6 +202,7 @@ export function Works() {
 					) : (
 						<button
 							className="rounded-full bg-gradient-to-tl from-slate-950/50 to-[#05604b]/50 p-4 opacity-10 shadow-md drop-shadow-md disabled:opacity-40"
+							aria-label="Disabled Next Page"
 							disabled
 						>
 							<svg
