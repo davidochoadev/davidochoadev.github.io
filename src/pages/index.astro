@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import {UserCard, MemojiCard, SocialCard, ReadCvCard, LookingCard } from '../components/Card';
 import { Works } from '../components/Works';
+import Stack from '../components/Stack.astro';
 ---
 
 <Layout title="David Ochoa | Web Developer">
@@ -13,6 +14,7 @@ import { Works } from '../components/Works';
 			<a href="#about" class="hover:text-[#9bffe6] hover:font-bold transition duration-300 ease-in-out">About</a>
 			<a href="#contacts" class="hover:text-[#9bffe6] hover:font-bold transition duration-300 ease-in-out">Contacts</a>
 			<a href="#projects" class="hover:text-[#9bffe6] hover:font-bold transition duration-300 ease-in-out">Projects</a>
+			<a href="#stack" class="hover:text-[#9bffe6] hover:font-bold transition duration-300 ease-in-out">Stack</a>
 		</div>
 	</header>
 	<main class="p-4 flex flex-col gap-4 mt-24 lg:p-8 lg:gap-8 lg:px-24 scroll-mt-24" id="about">
@@ -27,6 +29,9 @@ import { Works } from '../components/Works';
 		</div>
 		<div class="flex justify-center scroll-mt-28" id="projects">
 			<Works client:idle/>
+		</div>
+		<div class="flex justify-center scroll-mt-28" id="stack">
+			<Stack />
 		</div>
 	</main>
 </Layout>

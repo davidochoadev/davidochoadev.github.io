@@ -30,7 +30,7 @@ export function Works() {
 				</p>
 			</div>
 			<div className="flex h-full w-full flex-col items-center justify-center gap-5 p-2 md:flex-row">
-				<div className="hidden  w-1/12 md:flex justify-start">
+				<div className="hidden  w-1/12 justify-start md:flex">
 					{currentPage !== 1 ? (
 						<button
 							onClick={prevPage}
@@ -217,7 +217,7 @@ export function Works() {
 						</a>
 					))}
 				</div>
-				<div className="hidden w-1/12 md:flex justify-end">
+				<div className="hidden w-1/12 justify-end md:flex">
 					{currentPage !== nPages ? (
 						<button
 							onClick={nextPage}
