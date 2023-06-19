@@ -86,6 +86,7 @@ export function Works() {
 								alt=""
 								height={'100%'}
 								width={'100%'}
+								loading="lazy"
 								className="rounded-lg shadow-lg drop-shadow-lg md:h-auto md:w-[200px] lg:w-[400px]"
 							/>
 							<p className="pt-6 text-center text-xs text-slate-500 transition duration-300 ease-in-out group-hover:text-slate-300 lg:text-base">

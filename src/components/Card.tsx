@@ -1,6 +1,7 @@
 import { useAnimationFrame } from "framer-motion";
 import { useRef } from "react";
 
+
 export function UserCard() {
 	return (
 		<div className=" min-h-[300px] flex flex-row flex-wrap items-center gap-5 rounded-xl shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14 hover:rounded-br-3xl hover:rounded-tl-3xl tranistion-all duration-300 hover:scale-105 ease-in-out">
@@ -106,16 +107,16 @@ export function SocialCard() {
 		<div className=" w-full flex flex-row justify-center items-center rounded-xl shadow-[inset_4px_4px_10px_rgba(186,235,255,.2)] bg-gradient-to-br from-[#0281bd] via-[#096089] to-[#002c41] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10 hover:rounded-bl-3xl hover:rounded-tr-3xl tranistion duration-300 hover:scale-105">
 			<div className="grid grid-cols-2 grid-rows-2 w-[200px] h-[200px] md:flex md:flex-row md:w-full md:h-full md:items-center md:justify-center md:flex-wrap md:content-center md:max-w-[298px]">
 				<a href="https://github.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
-					<img src="./img/github.webp" alt="Github" className="w-20 h-20" width={'80px'} height={'80px'}/>
+					<img src="./img/github.webp" alt="Github" className="w-20 h-20" width={'80px'} height={'80px'} loading="lazy"/>
 				</a>
 				<a href="https://linkedin.com/in/davidochoadev" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
-					<img src="./img/linkedin.webp" alt="Linkedin" className="w-20 h-20"width={'80px'} height={'80px'}/>
+					<img src="./img/linkedin.webp" alt="Linkedin" className="w-20 h-20"width={'80px'} height={'80px'} loading="lazy"/>
 				</a>
 				<a href="https://twitter.com/davidochoadev" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
-					<img src="./img/twitter.webp" alt="Twitter" className="w-[92px] h-[92px]" width={'92px'} height={'92px'}/>
+					<img src="./img/twitter.webp" alt="Twitter" className="w-[92px] h-[92px]" width={'92px'} height={'92px'} loading="lazy"/>
 				</a>
 				<a href="https://api.whatsapp.com/send?phone=393517908366" target="_blank" className="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
-					<img src="./img/whatsapp.webp" alt="Twitter" className="w-[92px] h-[92px]" width={'92px'} height={'92px'}/>
+					<img src="./img/whatsapp.webp" alt="Twitter" className="w-[92px] h-[92px]" width={'92px'} height={'92px'} loading="lazy"/>
 				</a>
 			</div>
 		</div>
@@ -127,7 +128,7 @@ export function ReadCvCard() {
 		<div className="w-full content-center flex flex-row md:flex-col flex-wrap justify-center items-center gap-8 rounded-xl shadow-[inset_4px_4px_5px_rgba(255,255,255,.8)] bg-gradient-to-br from-slate-200 via-slate-400 to-slate-600 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr p-10 hover:rounded-bl-3xl hover:rounded-tr-3xl tranistion duration-300 hover:scale-105">
 			<div className="flex flex-row gap-4 justify-center items-center">
 				<a href="https://read.cv/davidochoa.dev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-slate-100 shadow-md drop-shadow-md flex justify-center items-center" aria-label="read my cv">
-					<img src="./img/readcv.svg" alt="Read CV" className="w-[60px] h-[60px]" width={'60px'} height={'60px'}/>
+					<img src="./img/readcv.svg" alt="Read CV" className="w-[60px] h-[60px]" width={'60px'} height={'60px'} loading="lazy" />
 				</a>
 				<h3 className="font-mono text-xl text-slate-700">
 					Check my Resume on read.cv
@@ -135,7 +136,7 @@ export function ReadCvCard() {
 			</div>
 			<div  className="flex flex-row gap-4 justify-center items-center">
 				<a href="https://www.frontendmentor.io/profile/davidochoadev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-white shadow-md drop-shadow-md flex justify-center items-center" aria-label="Visit my profile on frontend mentor">
-					<img src="./img/frontendmentor.webp" alt="Frontend Mentor" className="w-[70px] h-[70px]" width={'70px'} height={'70px'}/>
+					<img src="./img/frontendmentor.webp" alt="Frontend Mentor" className="w-[70px] h-[70px]" width={'70px'} height={'70px'} loading="lazy" />
 				</a>
 				<h3 className="font-mono text-xl text-slate-700">
 					Or my profile on Frontend Mentor
