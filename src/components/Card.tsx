@@ -126,15 +126,15 @@ export function ReadCvCard() {
 	return (
 		<div className="w-full content-center flex flex-row md:flex-col flex-wrap justify-center items-center gap-8 rounded-xl shadow-[inset_4px_4px_5px_rgba(255,255,255,.8)] bg-gradient-to-br from-slate-200 via-slate-400 to-slate-600 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr p-10 hover:rounded-bl-3xl hover:rounded-tr-3xl tranistion duration-300 hover:scale-105">
 			<div className="flex flex-row gap-4 justify-center items-center">
-				<a href="https://read.cv/davidochoa.dev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-slate-100 shadow-md drop-shadow-md flex justify-center items-center">
-					<img src="./img/readcv.svg" alt="" className="w-[60px] h-[60px]" width={'60px'} height={'60px'}/>
+				<a href="https://read.cv/davidochoa.dev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-slate-100 shadow-md drop-shadow-md flex justify-center items-center" aria-label="read my cv">
+					<img src="./img/readcv.svg" alt="Read CV" className="w-[60px] h-[60px]" width={'60px'} height={'60px'}/>
 				</a>
 				<h3 className="font-mono text-xl text-slate-700">
 					Check my Resume on read.cv
 				</h3>
 			</div>
 			<div  className="flex flex-row gap-4 justify-center items-center">
-				<a href="https://www.frontendmentor.io/profile/davidochoadev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-white shadow-md drop-shadow-md flex justify-center items-center">
+				<a href="https://www.frontendmentor.io/profile/davidochoadev" target="_blank" className="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-white shadow-md drop-shadow-md flex justify-center items-center" aria-label="Visit my profile on frontend mentor">
 					<img src="./img/frontendmentor.webp" alt="Frontend Mentor" className="w-[70px] h-[70px]" width={'70px'} height={'70px'}/>
 				</a>
 				<h3 className="font-mono text-xl text-slate-700">
