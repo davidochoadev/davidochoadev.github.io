@@ -1,26 +1,6 @@
 import { useAnimationFrame } from "framer-motion";
 import { useRef } from "react";
 
-
-export function UserCard() {
-	return (
-		<div className=" min-h-[300px] flex flex-row flex-wrap items-center gap-5 rounded-xl shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14 hover:rounded-br-3xl hover:rounded-tl-3xl tranistion-all duration-300 hover:scale-105 ease-in-out">
-			<img src="./img/profile.webp" width={'55px'} height={'55px'} alt="David Ochoa" className="w-14 rounded-full" />
-			<div className="flex flex-col md:flex-grow">
-				<h1 className="text-md md:text-lg text-white">Hi, I'm David Ochoa. 👋</h1>
-				<h2 className="text-xs md:text-sm text-slate-500">Junior Web Developer & Web Designer</h2>
-			</div>
-			<h3 className="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl md:text-5xl">
-				Driven to design and develop websites.
-			</h3>
-			<p className="text-slate-600 md:text-xl lg:text-2xl">
-				Fueled by a deep passion for constant learning, I am always seeking new knowledge and skills
-				to enhance my abilities.
-			</p>
-		</div>
-	);
-}
-
 export function MemojiCard() {
    const ref = useRef<HTMLDivElement>(null); // Specify the type of the ref
    const ref2 = useRef<HTMLImageElement>(null);
@@ -146,4 +126,4 @@ export function ReadCvCard() {
 	)
 }
 
-export default { UserCard, MemojiCard, SocialCard, ReadCvCard, LookingCard };
+export default { MemojiCard, SocialCard, ReadCvCard, LookingCard };
