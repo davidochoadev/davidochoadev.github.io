@@ -7,5 +7,8 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://davidochoadev.github.io',
-  integrations: [tailwind(), react(), image()]
+  integrations: [tailwind(), react(), image()],
+  experimental: {
+    assets: true
+   }
 });

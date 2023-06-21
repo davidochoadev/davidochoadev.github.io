@@ -1,8 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import {UserCard, MemojiCard, SocialCard, ReadCvCard, LookingCard } from '../components/Card';
+import { MemojiCard, SocialCard, ReadCvCard, LookingCard } from '../components/Card';
 import { Works } from '../components/Works';
 import Stack from '../components/Stack.astro';
+import profile from "../assets/profile.webp";
+import whatsapp from "../assets/whatsapp.webp";
+import twitter from "../assets/twitter.webp";
+import github from "../assets/github.webp";
+import linkedin from "../assets/linkedin.webp";
+import readcv from "../assets/readcv.svg";
+import frontendmentor from "../assets/frontendmentor.webp";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="David Ochoa | Web Developer">
@@ -19,13 +27,60 @@ import Stack from '../components/Stack.astro';
 	</header>
 	<main class="p-4 flex flex-col gap-4 mt-24 lg:p-8 lg:gap-8 lg:px-24 scroll-mt-24" id="about">
 		<div class="flex flex-col lg:flex-nowrap lg:flex-row gap-4 lg:gap-8 justify-center">
-			<UserCard/>
+			<div class=" min-h-[300px] flex flex-row flex-wrap items-center gap-5 rounded-xl shadow-[inset_4px_4px_10px_rgba(255,255,255,.2)] bg-gradient-to-tl from-slate-950 via-slate-900 to-[#05604b] p-4 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-br lg:rounded-tl lg:p-14 hover:rounded-br-3xl hover:rounded-tl-3xl tranistion-all duration-300 hover:scale-105 ease-in-out">
+				<div class="w-14 rounded-full">
+					<Image src={profile} alt="David Ochoa" class="rounded-full"/>
+				</div>
+				<div class="flex flex-col md:flex-grow">
+					<h1 class="text-md md:text-lg text-white">Hi, I'm David Ochoa. 👋</h1>
+					<h2 class="text-xs md:text-sm text-slate-500">Junior Web Developer & Web Designer</h2>
+				</div>
+				<h3 class="py-2 font-mono text-3xl text-white lg:py-8 lg:text-5xl md:text-5xl">
+					Driven to design and develop websites.
+				</h3>
+				<p class="text-slate-600 md:text-xl lg:text-2xl">
+					Fueled by a deep passion for constant learning, I am always seeking new knowledge and skills
+					to enhance my abilities.
+				</p>
+			</div>
 			<MemojiCard client:idle/>
 		</div>
 		<div class="flex flex-row flex-wrap lg:flex-nowrap lg:flex-row gap-4 lg:gap-8 justify-center scroll-mt-28" id="contacts">
 			<LookingCard client:idle/>
-			<SocialCard />
-			<ReadCvCard />
+			<div class=" w-full flex flex-row justify-center items-center rounded-xl shadow-[inset_4px_4px_10px_rgba(186,235,255,.2)] bg-gradient-to-br from-[#0281bd] via-[#096089] to-[#002c41] p-10 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr md:p-10 hover:rounded-bl-3xl hover:rounded-tr-3xl tranistion duration-300 hover:scale-105">
+				<div class="grid grid-cols-2 grid-rows-2 w-[200px] h-[200px] md:flex md:flex-row md:w-full md:h-full md:items-center md:justify-center md:flex-wrap md:content-center md:max-w-[298px]">
+					<a href="https://github.com/davidochoadev" target="_blank" class="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
+						<Image src={github} alt="Github" class="w-20 h-20" />
+					</a>
+					<a href="https://linkedin.com/in/davidochoadev" target="_blank" class="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
+						<Image src={linkedin} alt="Linkedin" class="w-20 h-20"/>
+					</a>
+					<a href="https://twitter.com/davidochoadev" target="_blank" class="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
+						<Image src={twitter} alt="Twitter" class="w-[92px] h-[92px]" />
+					</a>
+					<a href="https://api.whatsapp.com/send?phone=393517908366" target="_blank" class="flex justify-center items-center w-[100px] h-[100px] hover:scale-110 transition duration-300">
+						<Image src={whatsapp} alt="Whatsapp" class="w-[92px] h-[92px]" />
+					</a>
+				</div>
+			</div>
+			<div class="w-full content-center flex flex-row md:flex-col flex-wrap justify-center items-center gap-8 rounded-xl shadow-[inset_4px_4px_5px_rgba(255,255,255,.8)] bg-gradient-to-br from-slate-200 via-slate-400 to-slate-600 backdrop-blur-xl lg:w-2/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr p-10 hover:rounded-bl-3xl hover:rounded-tr-3xl tranistion duration-300 hover:scale-105">
+				<div class="flex flex-row gap-4 justify-center items-center">
+					<a href="https://read.cv/davidochoa.dev" target="_blank" class="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-slate-100 shadow-md drop-shadow-md flex justify-center items-center" aria-label="read my cv">
+						<img src="./img/readcv.svg" alt="Read CV" class="w-[60px] h-[60px]" width={'60px'} height={'60px'} loading="lazy" />
+					</a>
+					<h3 class="font-mono text-xl text-slate-700">
+						Check my Resume on read.cv
+					</h3>
+				</div>
+				<div  class="flex flex-row gap-4 justify-center items-center">
+					<a href="https://www.frontendmentor.io/profile/davidochoadev" target="_blank" class="h-[80px] min-w-[80px] border flex-grow transition duration-300 hover:scale-110 border-slate-300 rounded-3xl bg-white shadow-md drop-shadow-md flex justify-center items-center" aria-label="Visit my profile on frontend mentor">
+						<Image src={frontendmentor} alt="Frontend Mentor" class="w-[70px] h-[70px]"/>
+					</a>
+					<h3 class="font-mono text-xl text-slate-700">
+						Or my profile on Frontend Mentor
+					</h3>
+				</div>
+			</div>
 		</div>
 		<div class="flex justify-center scroll-mt-28" id="projects">
 			<Works client:idle/>
