@@ -11,6 +11,7 @@ import linkedin from "../assets/linkedin.webp";
 import readcv from "../assets/readcv.svg";
 import frontendmentor from "../assets/frontendmentor.webp";
 import { Image } from "astro:assets";
+import { ContraButton, FiverrButton } from '../components/Buttons';
 ---
 
 <Layout title="David Ochoa | Web Developer">
@@ -87,6 +88,10 @@ import { Image } from "astro:assets";
 		</div>
 		<div class="flex justify-center scroll-mt-28" id="stack">
 			<Stack />
+		</div>
+		<div class="flex justify-center scroll-mt-28 gap-4 flex-col w-full items-center md:flex-row" id="contra">
+			<ContraButton />
+			<FiverrButton />
 		</div>
 	</main>
 </Layout>
