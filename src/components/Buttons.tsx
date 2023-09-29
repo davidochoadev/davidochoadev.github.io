@@ -5,7 +5,7 @@ export function ContraButton() {
 				className="contra-hire-me-button"
 				data-analyticsUserId="324f13ff-36a2-490e-a679-fe1ff9ab2e71"
 				data-theme="dark"
-				data-username="davidochoadev"
+				data-username="davidochoa"
 			></div>
 			<script async src="https://contra.com/static/embed/sdk.js" charSet="utf-8"></script>
 		</>
