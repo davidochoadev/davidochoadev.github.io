@@ -13,13 +13,15 @@ export function ContraButton() {
 }
 
 export function FiverrButton() {
-   return(
-   <a href="https://www.fiverr.com/davidochoadev" className="bg-[#eee] flex flex-row justify-center items-center w-[230px] rounded-lg gap-2 h-[52px]">
-         <img src="./img/fiverr.webp" alt="fiverr"  className="w-[30px] h-[30px]" loading="lazy" />
-      <p className="text-xl font-semibold tracking-wide" >
-         Hire Me on Fiverr
-      </p>
-   </a>)
+	return (
+		<a
+			href="https://www.fiverr.com/davidochoadev"
+			className="flex h-[52px] w-[230px] flex-row items-center justify-center gap-2 rounded-lg bg-[#eee]"
+		>
+			<img src="./img/fiverr.webp" alt="fiverr" className="h-[30px] w-[30px]" loading="lazy" />
+			<p className="text-xl font-semibold tracking-wide">Hire Me on Fiverr</p>
+		</a>
+	);
 }
 
 export default { ContraButton, FiverrButton };
