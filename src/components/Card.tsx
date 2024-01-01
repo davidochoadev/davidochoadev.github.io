@@ -22,7 +22,7 @@ export function MemojiCard() {
     });
     
 	return (
-		<div className="flex min-h-[400px] flex-row flex-wrap items-center gap-5 rounded-xl  bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-[#33DDB3] via-[#1D7776] to-[#071038] backdrop-blur-xl lg:w-1/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr overflow-hidden hover:rounded-bl-3xl hover:rounded-tr-3xl tranistion duration-300 hover:scale-105">
+		<div className="flex min-h-[400px] flex-row flex-wrap items-center gap-5 rounded-xl  bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-[#33DDB3] via-[#1D7776] to-[#071038] backdrop-blur-xl lg:w-1/3 lg:rounded-3xl lg:rounded-bl lg:rounded-tr overflow-hidden hover:rounded-bl-3xl hover:rounded-tr-3xl transition duration-300 hover:scale-105">
          <div ref={ref} className="absolute left-0 transform -translate-y-1/2 w-full -bottom-[0px] lg:block hidden">
             <div className="w-[400px] h-[400px] rounded-full bg-[#33DDB3] absolute -bottom-[400px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"></div>
             <div className="w-[480px] h-[480px] rounded-full bg-[#2AB49A]  absolute -bottom-[480px] left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-40"></div>
