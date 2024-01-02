@@ -1,0 +1,13 @@
+---
+const { link, ariaLabel, spanText } = Astro.props;
+---
+<a
+href={link}
+target="_blank"
+class="group transition-all duration-300 first:fill-slate-400 hover:scale-125"
+aria-label={ariaLabel}
+rel="noopener noreferrer"
+>
+<span class="sr-only">{spanText}</span>
+<slot />
+</a>
