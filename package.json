@@ -10,8 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.0.3",
     "@astrojs/react": "^3.0.9",
     "@astrojs/tailwind": "^5.1.0",
+    "@sentry/astro": "^7.91.0",
+    "@spotlightjs/astro": "^1.0.9",
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "astro": "^4.0.8",
